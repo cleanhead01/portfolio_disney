@@ -22,7 +22,6 @@ html, body {
 /* 좌측 상단에 디즈니 로고 */
 .header-box .disney-logo-box {
     width: 200px; height: auto;
-    grid-area: 1 / 1 / 2 / 2;
 }
 .header-box .disney-logo-box img {
     width: 100%;

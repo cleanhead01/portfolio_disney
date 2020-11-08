@@ -5,9 +5,9 @@
         var sct = $(this).scrollTop()
 
         console.log($(this).scrollTop())
-        if (sct > 0 && sct <= 100) {
+        if (sct > 0 && sct <= 120) {
             $('.seok-logo-big-box').css({
-                transform : 'scale(0.6)',
+                transform : 'scale(0.8)',
                 transition : 'all 0.5s'
             })
             $('.article1 video').css({
@@ -16,9 +16,9 @@
                 transition : 'all 0.3s'
             })
             $('.header-box .seok-logo-box').hide()
-        } else if (sct > 100 && sct <= 200) {
+        } else if (sct > 120 && sct <= 230) {
             $('.seok-logo-big-box').css({
-                transform : 'scale(0.3)',
+                transform : 'scale(0.4)',
                 transition : 'all 0.5s'
             })
             $('.article1 video').css({
@@ -26,7 +26,7 @@
                 transition : 'all 0.1s'
             })
             $('.header-box .seok-logo-box').hide()
-        } else if (sct > 200 && sct <= 300) {
+        } else if (sct > 230 && sct <= 300) {
             $('.seok-logo-big-box').css({
                 transform : 'scale(0)',
                 transition : 'all 0.1s'
