@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+
+
+
+
+html, body {
+    height: 100%;
+}
+#header {
+    background: url(../images/sky-back.jpg) no-repeat;
+    background-size: cover;
+}
+.header-box {
+    position: fixed; top: 0px; left: 0px; right: 0px;
+    z-index: 99999999999999;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    place-items: center center;
+}
+/* 좌측 상단에 디즈니 로고 */
+.header-box .disney-logo-box {
+    width: 200px; height: auto;
+    grid-area: 1 / 1 / 2 / 2;
+}
+.header-box .disney-logo-box img {
+    width: 100%;
+}
+/* 중앙 상단에 석세스 로고 */
+.header-box .seok-logo-box {
+    width: 200px; height: auto;
+    grid-area: 1 / 2 / 2 / 3;
+    display: none;
+}
+.header-box .seok-logo-box img {
+    width: 100%;
+}
+/* 우측 상단에 햄버거 메뉴------------------------------------------------------------------ */
+.header-box .nav-box {
+    grid-area: 1 / 3 / 2 / 4;
+    border: 2px solid #fff;
+    width: 60px; height: 60px;
+    display: grid;
+    place-items: center center;
+}
+/* 햄버거 버튼 */
+.header-box .nav-box .nav-open {
+    
+}
+.header-box .nav-box .nav-open p {
+    margin: 5px 0px;
+}
+.header-box .nav-box .nav-open .hamburger-t {
+    width: 30px; height: 3px;
+    background: #fff;
+    border-radius: 5px;
+}
+.header-box .nav-box .nav-open .hamburger-m {
+    width: 30px; height: 3px;
+    background: #fff;
+    border-radius: 5px;
+}
+.header-box .nav-box .nav-open .hamburger-b {
+    width: 30px; height: 3px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+
+
+
+#section {
+    height: 100%;
+}
+/* 첫장 페이지----------------------------------------------------------------------------------- */
+.article1 {
+    /* height: 100%; */
+    padding-top: 125px; margin-bottom: -5px;
+    /* margin은 동영상 밑에 살짝 5px정도 뒷배경이 보여서 빼줌 */
+    background: url(../images/sky-back.jpg);
+}
+/* 중앙 하단에 석세스 로고 */
+.article1 .seok-logo-big-box {
+    width: 100%;
+    grid-area: 2 / 1 / 3 / 4;
+    /* background: red; */
+}
+.article1 .seok-logo-big-box img {
+    width: 100%;
+}
+/* 메인 동영상 */
+.article1 video {
+    width: 100%;
+    transform: scale(0.9);
+    margin-top: -50px;
+}
+/* 두번째장 페이지----------------------------------------------------------------------------------- */
+.article2 {
+    height: 100%;
+    background: url(../images/article2-back.jpg) no-repeat;
+    background-position: center; background-size: cover;
+    
+}
+
+
+
+/* 세번째장 페이지----------------------------------------------------------------------------------- */
+.article3 {
+    height: 100%;
+}
+.article3 > div {
+    position: relative;
+}
+.article3 .princess-img-box {
+    width: 100%;
+}
+.article3 .princess-img-box img {
+    width: 100%;
+}
+.article3 .princess {
+    height: 100%; width: 100%;
+    display: grid;
+    place-items: center center;
+    position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px;
+}
+
+
+
+
+
+
+
+
+.article3 .princess a {
+    border: 1px solid black; background: rgba(255,255,255,0.5);
+}
+.article3 .princess .anna {
+    grid-area: 3 / 2 / 7 / 5;
+    width: 100%; height: 100%;
+}
+.article3 .princess .elsa {
+    grid-area: 3 / 6 / 7 / 10;
+    width: 100%; height: 100%;
+}
+.article3 .princess .tiana {
+    grid-area: 4 / 10 / 9 / 14;
+    width: 100%; height: 100%;
+}
+.article3 .princess .merida {
+    grid-area: 4 / 14 / 8 / 17;
+    width: 100%; height: 100%;
+}
+.article3 .princess .belle {
+    grid-area: 2 / 19 / 7 / 22;
+    width: 100%; height: 100%;
+}
+.article3 .princess .cinderella {
+    grid-area: 1 / 26 / 9 / 30;
+    width: 100%; height: 100%;
+}
+.article3 .princess .aurora {
+    grid-area: 8 / 1 / 12 / 4;
+    width: 100%; height: 100%;
+}
+.article3 .princess .snowwhite {
+    grid-area: 7 / 17 / 11 / 20;
+    width: 100%; height: 100%;
+}
+.article3 .princess .mulan {
+    grid-area: 6 / 22 / 11 / 26;
+    width: 100%; height: 100%;
+}
+.article3 .princess .moana {
+    grid-area: 13 / 3 / 19 / 7;
+    width: 100%; height: 100%;
+}
+.article3 .princess .ariel {
+    grid-area: 11 / 7 / 16 / 10;
+    width: 100%; height: 100%;
+}
+.article3 .princess .vanellope {
+    grid-area: 11 / 12 / 16 / 16;
+    width: 100%; height: 100%;
+}
+.article3 .princess .pocahontas {
+    grid-area: 12 / 17 / 17 / 19;
+    width: 100%; height: 100%;
+}
+.article3 .princess .tangled {
+    grid-area: 11 / 24 / 20 / 20;
+    width: 100%; height: 100%;
+}
+.article3 .princess .jasmine {
+    grid-area: 11 / 26 / 16 / 30;
+    width: 100%; height: 100%;
+}
+
+
