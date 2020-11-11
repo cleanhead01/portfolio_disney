@@ -285,3 +285,73 @@ html, body {
 .article3 .princess .princess-content-box .princess-content .content-txt-box #elsa tr td:nth-child(2) {
     background: seashell;
 }
+/* 티아나 테이블 */
+.article3 .princess .princess-content-box .princess-content .content-txt-box #tiana tr td:nth-child(1) {
+    background: #9fdb23; color: #fff;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box #tiana tr td:nth-child(2) {
+    background: seashell;
+}
+/* 메리다 테이블 */
+.article3 .princess .princess-content-box .princess-content .content-txt-box #merida tr td:nth-child(1) {
+    background: #008080; color: #fff;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box #merida tr td:nth-child(2) {
+    background: seashell;
+}
+/* 벨 테이블 */
+.article3 .princess .princess-content-box .princess-content .content-txt-box #belle tr td:nth-child(1) {
+    background: #9fdb23; color: #fff;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box #belle tr td:nth-child(2) {
+    background: seashell;
+}
+/* 신데렐라 테이블 */
+.article3 .princess .princess-content-box .princess-content .content-txt-box #cinderella tr td:nth-child(1) {
+    background: #add8e6; color: #fff;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box #cinderella tr td:nth-child(2) {
+    background: seashell;
+}
+/* 오로라 테이블 */
+.article3 .princess .princess-content-box .princess-content .content-txt-box #aurora tr td:nth-child(1) {
+    background: #ff1493; color: #fff;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box #aurora tr td:nth-child(2) {
+    background: seashell;
+}
+/* 백설공주 테이블 */
+.article3 .princess .princess-content-box .princess-content .content-txt-box #snowwhite tr td:nth-child(1) {
+    background: #ff1493; color: #fff;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box #snowwhite tr td:nth-child(2) {
+    background: seashell;
+}
+/* 뮬란 테이블 */
+.article3 .princess .princess-content-box .princess-content .content-txt-box #mulan tr td:nth-child(1) {
+    background: #ffc0cb; color: #fff;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box #mulan tr td:nth-child(2) {
+    background: seashell;
+}
+/* 모아나 테이블 */
+.article3 .princess .princess-content-box .princess-content .content-txt-box #moana tr td:nth-child(1) {
+    background: #3399ff; color: #fff;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box #moana tr td:nth-child(2) {
+    background: seashell;
+}
+/* 인어공주 테이블 */
+.article3 .princess .princess-content-box .princess-content .content-txt-box #ariel tr td:nth-child(1) {
+    background: #2fad27; color: #fff;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box #ariel tr td:nth-child(2) {
+    background: seashell;
+}
+/* 바넬로피 테이블 */
+.article3 .princess .princess-content-box .princess-content .content-txt-box #vanellope tr td:nth-child(1) {
+    background: hotpink; color: #fff;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box #vanellope tr td:nth-child(2) {
+    background: seashell;
+}
