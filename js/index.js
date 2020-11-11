@@ -55,4 +55,12 @@
 
     // })
 
+    $('.article3 .princess a').on('click', function(){
+        $(this).next().show(500)
+    })
+
+    $('.article3 .princess-content-box .princess-content .close-box').on('click', function(){
+        $(this).parents('.princess-content-box').hide()
+    })
+
 })(jQuery)

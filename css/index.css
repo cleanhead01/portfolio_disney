@@ -13,7 +13,7 @@ html, body {
 }
 .header-box {
     position: fixed; top: 0px; left: 0px; right: 0px;
-    z-index: 99999999999999;
+    z-index: 9999999999;
     width: 100%;
     padding: 20px;
     display: grid;
@@ -160,10 +160,9 @@ html, body {
     /* filter: brightness(50%); */
 }
 .article3 .princess {
-    height: 100%; width: 100%;
     display: grid;
     place-items: center center;
-    position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px;
+    position: absolute; top: 0px; right: 0px; left: 0px; bottom: 0px;
 }
 
 
@@ -173,78 +172,116 @@ html, body {
 
 
 
-.article3 .princess a {
-    /* background: rgba(0,0,0,0.5); */
-    /* filter: brightness(0%); */
-}
-.article3 .princess a:hover {
-    /* filter: brightness(0%); */
-    /* opacity: 0; */
+/* 공주들 */
+.article3 .princess > a {
+    width: 100%; height: 100%;
 }
 .article3 .princess .anna {
     grid-area: 3 / 1 / 7 / 6;
-    width: 100%; height: 100%;
 }
 .article3 .princess .elsa {
     grid-area: 3 / 6 / 7 / 10;
-    width: 100%; height: 100%;
 }
 .article3 .princess .tiana {
     grid-area: 4 / 10 / 9 / 14;
-    width: 100%; height: 100%;
 }
 .article3 .princess .merida {
     grid-area: 4 / 14 / 8 / 17;
-    width: 100%; height: 100%;
 }
 .article3 .princess .belle {
     grid-area: 2 / 19 / 7 / 22;
-    width: 100%; height: 100%;
 }
 .article3 .princess .cinderella {
     grid-area: 1 / 26 / 9 / 30;
-    width: 100%; height: 100%;
 }
 .article3 .princess .aurora {
     grid-area: 8 / 1 / 12 / 5;
-    width: 100%; height: 100%;
 }
 .article3 .princess .snowwhite {
     grid-area: 7 / 17 / 11 / 20;
-    width: 100%; height: 100%;
 }
 .article3 .princess .mulan {
     grid-area: 6 / 22 / 11 / 26;
-    width: 100%; height: 100%;
 }
 .article3 .princess .moana {
     grid-area: 13 / 3 / 19 / 7;
-    width: 100%; height: 100%;
 }
 .article3 .princess .ariel {
     grid-area: 11 / 7 / 16 / 11;
-    width: 100%; height: 100%;
 }
 .article3 .princess .vanellope {
     grid-area: 11 / 12 / 16 / 16;
-    width: 100%; height: 100%;
 }
 .article3 .princess .pocahontas {
     grid-area: 12 / 17 / 17 / 19;
-    width: 100%; height: 100%;
 }
 .article3 .princess .tangled {
     grid-area: 11 / 24 / 20 / 20;
-    width: 100%; height: 100%;
 }
 .article3 .princess .jasmine {
     grid-area: 11 / 26 / 16 / 30;
-    width: 100%; height: 100%;
 }
-/* .article3 .princess > p {
-    grid-area: 1 / 1 / 30 / 30;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.5);
-} */
-
-
+/* 공주들 클릭시 나오는 텍스트------------------------------------------------------------------------------ */
+.article3 .princess .princess-content-box {
+    position: fixed; top: 0px; left: 0px; bottom: 0px; right: 0px;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    z-index: 99999999999;
+}
+.article3 .princess .princess-content-box .princess-content {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 300px;
+}
+/* 공주들 이미지 */
+.article3 .princess .princess-content-box .princess-content .content-img-box {
+    width: 100%;
+}
+.article3 .princess .princess-content-box .princess-content .content-img-box img {
+    width: 100%;
+}
+/* 공주들 상세내용 */
+.article3 .princess .princess-content-box .princess-content .content-txt-box table {
+    margin: 0px 0px 10px;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box table tr td {
+    padding: 5px 0px 5px 5px;
+    font-weight: bold;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box table tr td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+    padding-left: 0px;
+    border-right: 2px double #aaa;
+}
+/* 공주들 유투브 영상 */
+.article3 .princess .princess-content-box .princess-content .content-txt-box iframe {
+    width: 250px;
+    margin: 0px auto;
+    display: block;
+    margin-bottom: 10px;
+}
+/* 닫기 버튼 */
+.article3 .princess .princess-content-box .princess-content .close-box {
+    position: absolute; top: -20px; right: -15px;
+}
+.article3 .princess .princess-content-box .princess-content .close-box i {
+    font-size: 40px;
+    color: gray;
+    cursor: pointer;
+}
+/* 안나 테이블 */
+.article3 .princess .princess-content-box .princess-content .content-txt-box #anna tr td:nth-child(1) {
+    background: hotpink; color: #fff;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box #anna tr td:nth-child(2) {
+    background: seashell;
+}
+/* 엘사 테이블 */
+.article3 .princess .princess-content-box .princess-content .content-txt-box #elsa tr td:nth-child(1) {
+    background: skyblue; color: #fff;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box #elsa tr td:nth-child(2) {
+    background: seashell;
+}
