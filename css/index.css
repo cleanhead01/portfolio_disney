@@ -264,20 +264,35 @@ html, body {
     vertical-align: top;
     width: 49%;
 }
+.article3 .princess .princess-content-box .princess-content .content-txt-box table tbody {
+    width: 100%;
+    display: inline-block;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box table th {
+    font-size: 20px;
+    padding: 0px 0px 5px 5px; margin-bottom: 15px;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+}
 .article3 .princess .princess-content-box .princess-content .content-txt-box table tr td {
     padding: 5px 0px 5px 5px;
     font-weight: bold;
+    display: inline-block;
 }
 .article3 .princess .princess-content-box .princess-content .content-txt-box table tr td:nth-child(1) {
-    width: 100px;
-    text-align: center;
-    padding-left: 0px;
-    border-right: 2px double #aaa;
+    display: inline-block;
+    width: 50px;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box table tr td:nth-child(2) {
+    display: inline-block;
+    width: 50%;
+    /* 하/////////////////////////////////////////////////여기 안됨 */
 }
 /* 공주들 유투브 영상 */
 .article3 .princess .princess-content-box .princess-content .content-txt-box .youtube-box {
     display: inline-block;
     width: 49%;
+    vertical-align: top;
 }
 .article3 .princess .princess-content-box .princess-content .content-txt-box .youtube-box span {
     font-size: 20px;
