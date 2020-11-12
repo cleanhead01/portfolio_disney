@@ -175,6 +175,8 @@ html, body {
 /* 공주들 */
 .article3 .princess > a {
     width: 100%; height: 100%;
+    /* position: relative;
+    z-index: 99999999999; */
 }
 .article3 .princess .anna {
     grid-area: 3 / 1 / 7 / 6;
@@ -226,24 +228,41 @@ html, body {
     position: fixed; top: 0px; left: 0px; bottom: 0px; right: 0px;
     background: rgba(0,0,0,0.8);
     display: none;
-    z-index: 99999999999;
+    /* z-index: 999999999999999999999; */
 }
 .article3 .princess .princess-content-box .princess-content {
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    background: #fff;
-    width: 300px;
+    background: rgba(0,0,0,0);
+    width: 50%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    place-items: center center;
 }
 /* 공주들 이미지 */
-.article3 .princess .princess-content-box .princess-content .content-img-box {
-    width: 100%;
-}
 .article3 .princess .princess-content-box .princess-content .content-img-box img {
     width: 100%;
 }
 /* 공주들 상세내용 */
+.article3 .princess .princess-content-box .princess-content .content-txt-box {
+    color: #fff;
+    padding-left: 30px;
+}
+/* 공주들 이름+성격 */
+.article3 .princess .princess-content-box .princess-content .content-txt-box h2 {
+    font-size: 30px;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    padding: 0px 0px 10px;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box p {
+    margin: 20px 0px;
+}
+/* 공주들 테이블 */
 .article3 .princess .princess-content-box .princess-content .content-txt-box table {
-    margin: 0px 0px 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
 }
 .article3 .princess .princess-content-box .princess-content .content-txt-box table tr td {
     padding: 5px 0px 5px 5px;
@@ -256,11 +275,19 @@ html, body {
     border-right: 2px double #aaa;
 }
 /* 공주들 유투브 영상 */
-.article3 .princess .princess-content-box .princess-content .content-txt-box iframe {
-    width: 250px;
-    margin: 0px auto;
-    display: block;
-    margin-bottom: 10px;
+.article3 .princess .princess-content-box .princess-content .content-txt-box .youtube-box {
+    display: inline-block;
+    width: 49%;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box .youtube-box span {
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px; margin-bottom: 10px;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box .youtube-box iframe {
+    width: 100%;
 }
 /* 닫기 버튼 */
 .article3 .princess .princess-content-box .princess-content .close-box {
@@ -271,87 +298,318 @@ html, body {
     color: gray;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 공주들 클릭시 나오는 텍스트------------------------------------------------------------------------------ */
+/* .article3 .princess .princess-content-box {
+    position: fixed; top: 0px; left: 0px; bottom: 0px; right: 0px;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    z-index: 99999999999;
+}
+.article3 .princess .princess-content-box .princess-content {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0);
+    width: 300px;
+} */
+/* 공주들 이미지 */
+/* .article3 .princess .princess-content-box .princess-content .content-img-box {
+    width: 100%;
+    display: inline-block;
+}
+.article3 .princess .princess-content-box .princess-content .content-img-box img {
+    width: 100%;
+} */
+/* 공주들 상세내용 */
+/* .article3 .princess .princess-content-box .princess-content .content-txt-box table {
+    margin: 0px 0px 10px;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box table tr td {
+    padding: 5px 0px 5px 5px;
+    font-weight: bold;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box table tr td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+    padding-left: 0px;
+    border-right: 2px double #aaa;
+} */
+/* 공주들 유투브 영상 */
+/* .article3 .princess .princess-content-box .princess-content .content-txt-box iframe {
+    width: 250px;
+    margin: 0px auto;
+    display: block;
+    margin-bottom: 10px;
+} */
+/* 닫기 버튼 */
+/* .article3 .princess .princess-content-box .princess-content .close-box {
+    position: absolute; top: -20px; right: -15px;
+}
+.article3 .princess .princess-content-box .princess-content .close-box i {
+    font-size: 40px;
+    color: gray;
+    cursor: pointer;
+} */
 /* 안나 테이블 */
-.article3 .princess .princess-content-box .princess-content .content-txt-box #anna tr td:nth-child(1) {
+/* .article3 .princess .princess-content-box .princess-content .content-txt-box #anna tr td:nth-child(1) {
     background: hotpink; color: #fff;
 }
 .article3 .princess .princess-content-box .princess-content .content-txt-box #anna tr td:nth-child(2) {
     background: seashell;
-}
+} */
 /* 엘사 테이블 */
-.article3 .princess .princess-content-box .princess-content .content-txt-box #elsa tr td:nth-child(1) {
+/* .article3 .princess .princess-content-box .princess-content .content-txt-box #elsa tr td:nth-child(1) {
     background: skyblue; color: #fff;
 }
 .article3 .princess .princess-content-box .princess-content .content-txt-box #elsa tr td:nth-child(2) {
     background: seashell;
-}
+} */
 /* 티아나 테이블 */
-.article3 .princess .princess-content-box .princess-content .content-txt-box #tiana tr td:nth-child(1) {
+/* .article3 .princess .princess-content-box .princess-content .content-txt-box #tiana tr td:nth-child(1) {
     background: #9fdb23; color: #fff;
 }
 .article3 .princess .princess-content-box .princess-content .content-txt-box #tiana tr td:nth-child(2) {
     background: seashell;
-}
+} */
 /* 메리다 테이블 */
-.article3 .princess .princess-content-box .princess-content .content-txt-box #merida tr td:nth-child(1) {
+/* .article3 .princess .princess-content-box .princess-content .content-txt-box #merida tr td:nth-child(1) {
     background: #008080; color: #fff;
 }
 .article3 .princess .princess-content-box .princess-content .content-txt-box #merida tr td:nth-child(2) {
     background: seashell;
-}
+} */
 /* 벨 테이블 */
-.article3 .princess .princess-content-box .princess-content .content-txt-box #belle tr td:nth-child(1) {
+/* .article3 .princess .princess-content-box .princess-content .content-txt-box #belle tr td:nth-child(1) {
     background: #9fdb23; color: #fff;
 }
 .article3 .princess .princess-content-box .princess-content .content-txt-box #belle tr td:nth-child(2) {
     background: seashell;
-}
+} */
 /* 신데렐라 테이블 */
-.article3 .princess .princess-content-box .princess-content .content-txt-box #cinderella tr td:nth-child(1) {
+/* .article3 .princess .princess-content-box .princess-content .content-txt-box #cinderella tr td:nth-child(1) {
     background: #add8e6; color: #fff;
 }
 .article3 .princess .princess-content-box .princess-content .content-txt-box #cinderella tr td:nth-child(2) {
     background: seashell;
-}
+} */
 /* 오로라 테이블 */
-.article3 .princess .princess-content-box .princess-content .content-txt-box #aurora tr td:nth-child(1) {
+/* .article3 .princess .princess-content-box .princess-content .content-txt-box #aurora tr td:nth-child(1) {
     background: #ff1493; color: #fff;
 }
 .article3 .princess .princess-content-box .princess-content .content-txt-box #aurora tr td:nth-child(2) {
     background: seashell;
-}
+} */
 /* 백설공주 테이블 */
-.article3 .princess .princess-content-box .princess-content .content-txt-box #snowwhite tr td:nth-child(1) {
+/* .article3 .princess .princess-content-box .princess-content .content-txt-box #snowwhite tr td:nth-child(1) {
     background: #ff1493; color: #fff;
 }
 .article3 .princess .princess-content-box .princess-content .content-txt-box #snowwhite tr td:nth-child(2) {
     background: seashell;
-}
+} */
 /* 뮬란 테이블 */
-.article3 .princess .princess-content-box .princess-content .content-txt-box #mulan tr td:nth-child(1) {
+/* .article3 .princess .princess-content-box .princess-content .content-txt-box #mulan tr td:nth-child(1) {
     background: #ffc0cb; color: #fff;
 }
 .article3 .princess .princess-content-box .princess-content .content-txt-box #mulan tr td:nth-child(2) {
     background: seashell;
-}
+} */
 /* 모아나 테이블 */
-.article3 .princess .princess-content-box .princess-content .content-txt-box #moana tr td:nth-child(1) {
+/* .article3 .princess .princess-content-box .princess-content .content-txt-box #moana tr td:nth-child(1) {
     background: #3399ff; color: #fff;
 }
 .article3 .princess .princess-content-box .princess-content .content-txt-box #moana tr td:nth-child(2) {
     background: seashell;
-}
+} */
 /* 인어공주 테이블 */
-.article3 .princess .princess-content-box .princess-content .content-txt-box #ariel tr td:nth-child(1) {
+/* .article3 .princess .princess-content-box .princess-content .content-txt-box #ariel tr td:nth-child(1) {
     background: #2fad27; color: #fff;
 }
 .article3 .princess .princess-content-box .princess-content .content-txt-box #ariel tr td:nth-child(2) {
     background: seashell;
-}
+} */
 /* 바넬로피 테이블 */
-.article3 .princess .princess-content-box .princess-content .content-txt-box #vanellope tr td:nth-child(1) {
+/* .article3 .princess .princess-content-box .princess-content .content-txt-box #vanellope tr td:nth-child(1) {
     background: hotpink; color: #fff;
 }
 .article3 .princess .princess-content-box .princess-content .content-txt-box #vanellope tr td:nth-child(2) {
     background: seashell;
+} */
+/* 포카혼타스 테이블 */
+/* .article3 .princess .princess-content-box .princess-content .content-txt-box #pocahontas tr td:nth-child(1) {
+    background: #ffa500; color: #fff;
 }
+.article3 .princess .princess-content-box .princess-content .content-txt-box #pocahontas tr td:nth-child(2) {
+    background: seashell;
+} */
+/* 라푼젤 테이블 */
+/* .article3 .princess .princess-content-box .princess-content .content-txt-box #tangled tr td:nth-child(1) {
+    background: #ba55d3; color: #fff;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box #tangled tr td:nth-child(2) {
+    background: seashell;
+} */
+/* 자스민 테이블 */
+/* .article3 .princess .princess-content-box .princess-content .content-txt-box #jasmine tr td:nth-child(1) {
+    background: #40e0d0; color: #fff;
+}
+.article3 .princess .princess-content-box .princess-content .content-txt-box #jasmine tr td:nth-child(2) {
+    background: seashell;
+} */
