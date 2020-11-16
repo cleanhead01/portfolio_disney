@@ -56,7 +56,7 @@
     // })
 
     $('.article3 .princess a').on('click', function(){
-        $(this).next().show(500)
+        $(this).next().slideDown(500)
         return false
     })
 
