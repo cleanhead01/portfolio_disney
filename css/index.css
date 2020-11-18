@@ -372,7 +372,34 @@ html, body {
 
 
 
+<<<<<<< Updated upstream
 
+=======
+.article5 .slide-outer {
+    
+}
+.article5 .slide-outer h2 {
+    padding: 50px 0px;
+    font-size: 50px;
+    color: #fff;
+}
+.article5 .slide-outer .slide-inner {
+    height: 100%; width: 100%;
+    position: relative;
+    /* 자식 .slide의 float때문에 오버플로우히든 */
+
+}
+.article5 .slide-outer .slide-inner .slide {
+    /* 자식 txt는 따로 움직여야해서 할아버지한테 position을 줘야하기 때문에 float */
+    /* float: right; */
+}
+.article5 .slide-outer .slide-inner .slide .slide-txt {
+    position: absolute; top: 0px; left: 30px;
+    /* transform: translateY(-50%); */
+    color: #fff;
+    width: 30%;
+}
+>>>>>>> Stashed changes
 
 
 
