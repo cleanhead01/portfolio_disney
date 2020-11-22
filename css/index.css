@@ -168,10 +168,6 @@ html, body {
 
 
 
-
-
-
-
 /* 공주들 */
 .article3 .princess > a {
     width: 100%; height: 100%;
@@ -348,87 +344,163 @@ html, body {
 
 
 
-/* 다섯번째장 페이지------------------------------------------------------------------------------------- */
-.article5 {
+/* 여섯번째장 페이지------------------------------------------------------------------------------------- */
+.article6 {
     position: relative;
 }
 /* 백그라운드 이미지 */
-.article5 .all-disney-img-box {
+.article6 .all-disney-img-box {
     width: 100%;
 }
-.article5 .all-disney-img-box img {
+.article6 .all-disney-img-box img {
     width: 100%;
 }
 
 /* 영화 목록 구역------------- */
-.article5 .disney-movie-box {
+.article6 .disney-movie-box {
     position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;
 }
 
-
-
-
-
-
-
-.article5 .slide-outer {
+/* 영화 목록 슬라이드--------------------------------------------------------------------------------- */
+.article6 .slide-outer {
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%);
+    width: 80%;
 }
-.article5 .slide-outer h2 {
+.article6 .slide-outer h2 {
     padding: 50px 0px 100px;
     font-size: 50px;
     color: #fff;
 }
 
 /* 영화 텍스트 구역--------------------------------------------------------------------------------------- */
-.article5 .slide-outer .slide-inner-txt {
+.article6 .slide-outer .slide-inner-txt {
     display: inline-block;
-    width: 25%;
-    vertical-align: middle;
+    width: 30%; height: 100%;
+    vertical-align: top;
     color: #fff;
 }
 /* 영화제목 */
-.article5 .slide-outer .slide-inner-txt h3 {
-    font-size: 40px;
+.article6 .slide-outer .slide-inner-txt h3 {
+    font-size: 30px;
     display: inline-block;
 }
 /* 개봉년도 */
-.article5 .slide-outer .slide-inner-txt span {
+.article6 .slide-outer .slide-inner-txt span {
     color: #aaa;
+    font-size: 20px;
 }
 /* 영여 영화제목 */
-.article5 .slide-outer .slide-inner-txt p:nth-of-type(1) {
+.article6 .slide-outer .slide-inner-txt p:nth-of-type(1) {
     color: #aaa;
     font-size: 20px;
 }
 /* 영화 명대사 */
-.article5 .slide-outer .slide-inner-txt p:nth-of-type(2) {
+.article6 .slide-outer .slide-inner-txt p:nth-of-type(2) {
     color: #aaa;
     padding: 20px 0px;
-    font-size: 30px;
+    font-size: 20px;
 }
 /* 영화 view버튼 */
-.article5 .slide-outer .slide-inner-txt button {
+.article6 .slide-outer .slide-inner-txt button {
     padding: 10px 10px;
 }
 /* 영화 포스터 구역---------------------------------------------------------------------------------------- */
-.article5 .slide-outer .slide-inner-img {
+.article6 .slide-outer .slide-inner-img {
     display: inline-block;
-    width: 70%;
-    vertical-align: middle;
+    width: 69%;
+    vertical-align: top;
 }
-.article5 .slide-outer .slide-inner-img .slide {
+.article6 .slide-outer .slide-inner-img .slide {
     margin-right: 10px;
 }
+.article6 .slide-outer .slide-inner-img .slide img {
+    width: 100%;
+}
 
 
 
 
 
 
+/* 일곱번째장 페이지--------------------------------------------------------------------------------- */
+.article7 {
+    background: #111;
+    position: relative;
+}
+.article7 .disney-studio-img-box {
+    width: 100%;
+}
+.article7 .disney-studio-img-box img {
+    width: 100%;
+}
+.article7 .disney-studio-box {
+    position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;
+    background: rgba(0,0,0,0.5);
+}
+/* 스튜디오 텍스트 */
+.article7 .studio-txt-box {
+    text-align: center;
+    color: #fff;
+    font-size: 70px;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-
+/* 스튜디오 이미지 */
+.article7 .studio-logo-box {
+    /* position: relative;
+    height: 100%; */
+}
+.article7 .studio-logo-box > div {
+    position: absolute;
+    width: 20%;
+    max-width: 200px;
+}
+.article7 .studio-logo-box > div img {
+    width: 100%;
+}
+/* 픽처스 */
+.article7 .studio-logo-box .pictures {
+    top: 200px; left: 15%;
+}   
+/* 애니메이션 스튜디오 */
+.article7 .studio-logo-box .animation {
+    top: 200px; left: 35%;
+}
+/* 픽사 스튜디오 */
+.article7 .studio-logo-box .pixar {
+    top: 250px; left: 55%;
+    max-width: 300px;
+}
+/* 터치스톤 */
+.article7 .studio-logo-box .touch {
+    top: 200px; left: 75%;
+    max-width: 300px;
+}
+/* 루카스 */
+.article7 .studio-logo-box .lucas {
+    top: 50%; left: 5%;
+    max-width: 300px;
+}
+/* 마블 */
+.article7 .studio-logo-box .marvel {
+    bottom: 150px; left: 20%;
+    max-width: 300px;
+}
+/* 20세기 */
+.article7 .studio-logo-box .century {
+    bottom: 100px; left: 50%;
+    transform: translateX(-50%);
+}
+/* 서치라이트 */
+.article7 .studio-logo-box .searchlight {
+    bottom: 100px; left: 65%;
+}
+/* 블루스카이 */
+.article7 .studio-logo-box .bluesky {
+    top: 50%; left: 85%;
+}
 
 
 
