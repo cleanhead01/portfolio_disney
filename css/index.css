@@ -163,6 +163,8 @@ html, body {
     display: grid;
     place-items: center center;
     position: absolute; top: 0px; right: 0px; left: 0px; bottom: 0px;
+    z-index: 99999999999;
+    /* z-index값이 헤더가 9 10개 그 위에 올려야되서 상세설명이 9 11개 제일 높음 */
 }
 
 
@@ -508,7 +510,25 @@ html, body {
 
 
 
+#footer {
+    color: #9b9b9b;
+    font-size: 12px; font-weight: bold;
+    background: #363636;
+    position: relative;
+    height: 50px; line-height: 50px;
+}
 
+
+#footer .copyright img {
+    padding: 0px 20px;
+}
+#footer ul {
+    position: absolute; top: 0px; right: 0px;
+}
+#footer ul li {
+    display: inline-block;
+    padding: 0px 20px 0px 0px;
+}
 
 
 
