@@ -1,6 +1,22 @@
 (function($){
 
+    // 왼쪽 네비버튼 클릭하면 해당 구역으로 가기
+    $('.nav-button-box ul li').on('click', function(){
+        var index = $(this).index()
+        var zero = 0
+        for(var i=0; i < index; i++){
+            var artHight = $('article').eq(i).outerHeight()
+            zero += artHight
+        }
+        $(this).addClass('on')
+        $(this).siblings().removeClass('on')
+        $('body, html').stop().animate({
+            scrollTop: zero
+        }, 800)
+        return false
+    })
 
+    // 공주들 얼굴 클릭하면 나오는 설명메뉴
     $('.article3 .princess a').on('click', function(){
         $(this).next().slideDown(500)
         return false
