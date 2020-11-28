@@ -16,6 +16,20 @@
         return false
     })
 
+    // 스크롤 했을 때 해당 구역의 위치가 네비버튼에 표시되기
+    $(window).scroll(function(){
+        var sct = $(this).scrollTop()
+        var artTop = $('article').offset().top
+        var liIndex = $('.nav-button-box ul li').index()
+
+        if (sct >= artTop) {
+            
+
+        }
+
+    })
+
+
     // 공주들 얼굴 클릭하면 나오는 설명메뉴
     $('.article3 .princess a').on('click', function(){
         $(this).next().slideDown(500)
