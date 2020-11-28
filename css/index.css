@@ -202,6 +202,8 @@ html, body {
 .article3 .princess > a span {
     position: absolute; bottom: 0px;
     width: 100%;
+    z-index: -1;
+    /* 상세설명 보다 멘트가 올라오는걸 방지하기 위해 -1값을 준다. */
     /* background: red;  */
     color: #fff;
     text-align: center;
@@ -291,7 +293,7 @@ html, body {
     position: fixed; top: 0px; left: 0px; bottom: 0px; right: 0px;
     background: rgba(0,0,0,0.8);
     display: none;
-    /* z-index: 999999999999999999999; */
+    z-index: 999999999999;
 }
 .article3 .princess .princess-content-box .princess-content {
     position: absolute; top: 50%; left: 50%;
