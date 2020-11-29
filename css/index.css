@@ -199,6 +199,7 @@ html, body {
     width: 100%; height: 100%;
     position: relative;
 }
+/* 클릭어스 멘트 */
 .article3 .princess > a span {
     position: absolute; bottom: 0px;
     width: 100%;
@@ -228,6 +229,7 @@ html, body {
         transform: scale(0);
     }
 }
+/* 공주들 위치 설정 및 커서 변경 */
 .article3 .princess .anna {
     grid-area: 3 / 1 / 7 / 6;
     cursor: url(../images/anna.png), auto;
