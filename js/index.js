@@ -1,5 +1,9 @@
 (function($){
 
+    $(window).load(function(){
+        $('.loading-box').delay(500).fadeOut(500)
+    })
+
     // 왼쪽 네비버튼 클릭하면 해당 구역으로 가기
     $('.nav-button-box ul li').on('click', function(){
         var index = $(this).index()
@@ -12,7 +16,7 @@
         $(this).siblings().removeClass('on')
         $('body, html').stop().animate({
             scrollTop: zero
-        }, 800)
+        }, 500)
         return false
     })
 
@@ -48,50 +52,6 @@
 
     })
 
-    // var sch1 = $('section').eq(0).outerHeight()
-    // var sch2 = $('section').eq(1).outerHeight()
-    // var sch3 = $('section').eq(2).outerHeight()
-    // var sch4 = $('section').eq(3).outerHeight()
-    // function currNav (){
-    //     if(sct < sch1){
-    //         $('.nav li').eq(0).addClass('focus')
-    //         $('.nav li').eq(0).siblings().removeClass('focus')
-    //         $('.left-nav ul a').eq(0).addClass('on')
-    //         $('.left-nav ul a').eq(0).siblings().removeClass('on')
-    //         $('.prev-arrow').stop().animate({opacity: '0s'}, 500)
-    //         $('.next-arrow').stop().animate({opacity: '1'}, 500)
-    //     } else if(sct>=sch1 && sct<sch1+sch2){
-    //         $('.nav li').eq(1).addClass('focus')
-    //         $('.nav li').eq(1).siblings().removeClass('focus')
-    //         $('.left-nav ul a').eq(1).addClass('on')
-    //         $('.left-nav ul a').eq(1).siblings().removeClass('on')
-    //         $('.prev-arrow').stop().animate({opacity: '1'}, 500)
-    //         $('.next-arrow').stop().animate({opacity: '1'}, 500)
-    //         $('.skill ul').css({display: 'inline-block'}).stop().animate({opacity: '1'}, 500)
-    //     } else if(sct>=sch1+sch2 && sct<sch1+sch2+sch3){
-    //         $('.nav li').eq(2).addClass('focus')
-    //         $('.nav li').eq(2).siblings().removeClass('focus')
-    //         $('.left-nav ul a').eq(2).addClass('on')
-    //         $('.left-nav ul a').eq(2).siblings().removeClass('on')
-    //         $('.prev-arrow').stop().animate({opacity: '1'}, 500)
-    //         $('.next-arrow').stop().animate({opacity: '1'}, 500)
-    //     } else if(sct>=sch1+sch2+sch3 && sct<sch1+sch2+sch3+sch4){
-    //         $('.nav li').eq(3).addClass('focus')
-    //         $('.nav li').eq(3).siblings().removeClass('focus')
-    //         $('.left-nav ul a').eq(3).addClass('on')
-    //         $('.left-nav ul a').eq(3).siblings().removeClass('on')
-    //         $('.prev-arrow').stop().animate({opacity: '1'}, 500)
-    //         $('.next-arrow').stop().animate({opacity: '1'}, 500)
-    //     } else if(sct>=sch1+sch2+sch3+sch4){
-    //         $('.nav li').eq(4).addClass('focus')
-    //         $('.nav li').eq(4).siblings().removeClass('focus')
-    //         $('.left-nav ul a').eq(4).addClass('on')
-    //         $('.left-nav ul a').eq(4).siblings().removeClass('on')
-    //         $('.prev-arrow').stop().animate({opacity: '1'}, 500)
-    //         $('.next-arrow').stop().animate({opacity: '0'}, 500)
-    //     }
-    // }
-    // currNav()
 
 
     // 공주들 얼굴 클릭하면 나오는 설명메뉴
