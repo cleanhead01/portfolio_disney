@@ -4,8 +4,20 @@
 
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
 
-    
+    /* 아티클2.디즈니 회사 소개 페이지에서 설명글이 1024밑으로는 8줄 이상에서 생략되게 표시 */
+    .article2 .introduction-box > div p {
+        line-height: 2;
+        max-width: 768px; width: 70%;
+        /* min-height: 264px; */
+        margin: 0px auto;
+        word-break: keep-all;
+        /* 줄바꿈이 단어 하나하나 내려감 */
+        font-size: 16px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        display: -webkit-box; -webkit-line-clamp: 8; -webkit-box-orient: vertical; overflow: hidden;
+        /* 여러줄일때 아티클 구역에 넘치는 내용을 방지하기 위해서 1제약을 걸어둔다. */
+    }
 
 }

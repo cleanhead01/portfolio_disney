@@ -414,10 +414,11 @@ html, body {
 .article4 .slide-outer {
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%);
+    width: 75%;
 }
 .article4 .slide-outer h2 {
     padding: 50px 0px 100px;
-    font-size: 50px;
+    font-size: 3vw;
     color: #fff;
 }
 
@@ -430,7 +431,7 @@ html, body {
 }
 /* 영화제목 */
 .article4 .slide-outer .slide-inner-txt h3 {
-    font-size: 21px;
+    font-size: 2vw;
     display: inline-block;
 }
 /* 개봉년도 */
@@ -447,7 +448,7 @@ html, body {
 .article4 .slide-outer .slide-inner-txt p:nth-of-type(2) {
     color: #aaa;
     padding: 20px 0px;
-    font-size: 16px;
+    font-size: 1vw;
 }
 /* 영화 view버튼 */
 .article4 .slide-outer .slide-inner-txt button {
