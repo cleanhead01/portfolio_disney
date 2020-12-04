@@ -3,7 +3,36 @@
 
 
 
+@media screen and (max-width:1260px) {
 
+    /* 공주들 얼굴 누르면 나오는 내용박스 */
+    .article3 .princess .princess-content-box .princess-content {
+        position: absolute; top: 40%; left: 50%;
+        transform: translate(-50%, -40%);
+        background: rgba(0,0,0,0);
+        width: 50%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        place-items: center center;
+        position: relative;
+    }
+    /* 공주들 테이블 */
+    .article3 .princess .princess-content-box .princess-content .content-txt-box .table {
+        display: inline-block;
+        vertical-align: top;
+        width: 49%;
+        position: absolute; top: 100%; left: 0px;
+    }
+    /* 공주들 유투브 영상 */
+    .article3 .princess .princess-content-box .princess-content .content-txt-box .youtube-box {
+        display: inline-block;
+        width: 49%;
+        vertical-align: top;
+        position: absolute; top: 100%; right: 0px;
+    }
+    
+
+}
 @media screen and (max-width:1024px) {
 
     /* 아티클2.디즈니 회사 소개 페이지에서 설명글이 1024밑으로는 8줄 이상에서 생략되게 표시 */

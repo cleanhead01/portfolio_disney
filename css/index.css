@@ -311,7 +311,7 @@ html, body {
 }
 .article3 .princess .princess-content-box .princess-content .content-txt-box table th {
     font-size: 20px;
-    padding: 0px 0px 5px 5px; margin-bottom: 15px;
+    padding: 10px 0px 5px 5px; margin-bottom: 15px;
     border-bottom: 2px solid #fff;
     text-align: left;
     display: inline-block;
@@ -337,7 +337,7 @@ html, body {
     display: inline-block;
     vertical-align: top;
     border-bottom: 2px solid #fff;
-    padding-bottom: 5px; margin-bottom: 10px;
+    padding: 10px 0px 5px 0px; margin-bottom: 10px;
 }
 .article3 .princess .princess-content-box .princess-content .content-txt-box .youtube-box iframe {
     width: 100%;
