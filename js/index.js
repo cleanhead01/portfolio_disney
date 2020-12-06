@@ -1,8 +1,33 @@
 (function($){
 
-    $(window).load(function(){
-        $('.loading-box').delay(500).fadeOut(500)
-    })
+    // $(window).load(function(){
+    //     $('.loading-box').delay(500).fadeOut(500)
+    // })
+
+
+    // 로딩화면
+    var percentage = 0
+    var setTimer = setInterval(timer, 20)
+    function timer() {
+        percentage++
+        // 얼굴 색 채우기
+        $('.loading-box .loading .face span').css({
+            width: percentage+'%'
+        })
+        // 귀 색 채우기
+        $('.loading-box .loading .ear span').css({
+            width: percentage+'%'
+        })
+        // 100%까지 가면 사라지기
+        if (percentage === 101) {
+            clearInterval(setTimer)
+            $('.loading-box').fadeOut(800)
+            return false
+        }
+        // 퍼센트 숫자세기
+        $('.loading-box .percentage p').text(percentage+'%')
+    }
+
 
     // 왼쪽 네비버튼 클릭하면 해당 구역으로 가기
     $('.nav-button-box ul li').on('click', function(){
